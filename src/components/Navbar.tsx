@@ -63,30 +63,35 @@ const Navbar = () => {
       lenis?.destroy();
     };
   }, []);
+
   return (
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          RH
+          SK
         </a>
+
         <a
-          href="mailto:redoyanul1234@gmail.com"
+          href="mailto:shivamrk2509@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          redoyanul1234@gmail.com
+          shivamrk2509@gmail.com
         </a>
+
         <ul>
           <li>
             <a data-href="#about" href="#about">
               <HoverLinks text="ABOUT" />
             </a>
           </li>
+
           <li>
             <a data-href="#work" href="#work">
               <HoverLinks text="WORK" />
             </a>
           </li>
+
           <li>
             <a data-href="#contact" href="#contact">
               <HoverLinks text="CONTACT" />

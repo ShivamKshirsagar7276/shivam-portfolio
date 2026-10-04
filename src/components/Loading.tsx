@@ -38,6 +38,7 @@ const Loading = ({ percent }: { percent: number }) => {
     const rect = target.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
+
     target.style.setProperty("--mouse-x", `${x}px`);
     target.style.setProperty("--mouse-y", `${y}px`);
   }
@@ -46,8 +47,9 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          RedoyanulHaque
+          Shivam Kshirsagar
         </a>
+
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
             <div className="loaderGame-in">
@@ -55,22 +57,28 @@ const Loading = ({ percent }: { percent: number }) => {
                 <div className="loaderGame-line" key={index}></div>
               ))}
             </div>
+
             <div className="loaderGame-ball"></div>
           </div>
         </div>
       </div>
+
       <div className="loading-screen">
         <div className="loading-marquee">
           <Marquee>
-            <span>&nbsp; AI Engineer &nbsp;</span> <span>&nbsp; Full Stack Developer &nbsp;</span>
-            <span>&nbsp; AI Engineer &nbsp;</span> <span>&nbsp; Full Stack Developer &nbsp;</span>
+            <span>&nbsp; AI Engineer &nbsp;</span>
+            <span>&nbsp; Full Stack Developer &nbsp;</span>
+            <span>&nbsp; AI Engineer &nbsp;</span>
+            <span>&nbsp; Full Stack Developer &nbsp;</span>
           </Marquee>
         </div>
+
         <div
           className={`loading-wrap ${clicked && "loading-clicked"}`}
           onMouseMove={(e) => handleMouseMove(e)}
         >
           <div className="loading-hover"></div>
+
           <div className={`loading-button ${loaded && "loading-complete"}`}>
             <div className="loading-container">
               <div className="loading-content">
@@ -78,8 +86,10 @@ const Loading = ({ percent }: { percent: number }) => {
                   Loading <span>{percent}%</span>
                 </div>
               </div>
+
               <div className="loading-box"></div>
             </div>
+
             <div className="loading-content2">
               <span>Welcome</span>
             </div>
@@ -102,9 +112,11 @@ export const setProgress = (setLoading: (value: number) => void) => {
       setLoading(percent);
     } else {
       clearInterval(interval);
+
       interval = setInterval(() => {
         percent = percent + Math.round(Math.random());
         setLoading(percent);
+
         if (percent > 91) {
           clearInterval(interval);
         }
@@ -120,6 +132,7 @@ export const setProgress = (setLoading: (value: number) => void) => {
   function loaded() {
     return new Promise<number>((resolve) => {
       clearInterval(interval);
+
       interval = setInterval(() => {
         if (percent < 100) {
           percent++;
@@ -131,5 +144,6 @@ export const setProgress = (setLoading: (value: number) => void) => {
       }, 2);
     });
   }
+
   return { loaded, percent, clear };
 };

@@ -1,192 +1,244 @@
 export const config = {
     developer: {
-        name: "Redoyanul",
-        fullName: "Redoyanul Haque",
-        title: "AI & Full-Stack Developer",
-        description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
+        name: "Shivam",
+        fullName: "Shivam Kshirsagar",
+        title: "AI Engineer & Full-Stack Developer",
+        description:
+            "AI Engineer & Full-Stack Developer building intelligent systems, AI-powered applications, and modern full-stack solutions. Passionate about artificial intelligence, machine learning, automation, and turning innovative ideas into real-world products."
     },
+
     social: {
-        github: "red1-for-hek",
-        email: "redoyanul1234@gmail.com",
-        location: "Bangladesh"
+        github: "ShivamKshirsagar7276",
+        email: "shivamrk2509@gmail.com",
+        location: "Pune, Maharashtra, India"
     },
+
     about: {
         title: "About Me",
-        description: "I am a self-taught AI & Full-Stack Developer from Bangladesh. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas."
+        description:
+            "I am an AI Engineer & Full-Stack Developer from Pune, India, currently pursuing a B.Tech in Artificial Intelligence & Data Science after completing my Diploma in Artificial Intelligence & Machine Learning with 86.77%. I enjoy building intelligent systems, AI-powered applications, modern web platforms, automation tools, and practical solutions to real-world problems. My work spans Artificial Intelligence, Machine Learning, RAG systems, Computer Vision, AI assistants, backend development, and full-stack web development. I am passionate about continuously learning new technologies and transforming ideas into useful products."
     },
+
     experiences: [
         {
-            position: "Learning Something New",
-            company: "Self-Development",
-            period: "2025 - Present",
-            location: "Bangladesh",
-            description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
+            position: "B.Tech in Artificial Intelligence & Data Science",
+            company: "Zeal College",
+            period: "2026 - Present",
+            location: "Pune, Maharashtra, India",
+            description:
+                "Currently pursuing a B.Tech in Artificial Intelligence & Data Science, developing deeper expertise in artificial intelligence, machine learning, data science, software engineering, and modern application development.",
             responsibilities: [
-                "Researching cutting-edge AI and ML technologies",
-                "Experimenting with new frameworks and tools",
-                "Contributing to open-source projects",
-                "Building innovative personal projects"
+                "Studying Artificial Intelligence and Data Science",
+                "Building AI and machine learning projects",
+                "Developing modern full-stack applications",
+                "Exploring emerging AI technologies",
+                "Working on real-world technical projects and solutions"
             ],
-            technologies: ["Research", "Innovation", "Open Source", "New Tech"]
+            technologies: [
+                "Python",
+                "Artificial Intelligence",
+                "Machine Learning",
+                "Data Science",
+                "React",
+                "FastAPI"
+            ]
         },
+
         {
-            position: "AI Engineer",
-            company: "Freelance & Projects",
-            period: "2025",
-            location: "Bangladesh",
-            description: "Developing intelligent AI systems, chatbots, and machine learning solutions. Building next-gen conversational AI agents and JARVIS-like personal assistants.",
+            position: "AI/ML Engineer Intern",
+            company: "iBase",
+            period: "3 Months",
+            location: "Pune, Maharashtra, India",
+            description:
+                "Completed a 3-month internship as an AI/ML Engineer, gaining practical exposure to artificial intelligence, machine learning, Python development, and working in a professional technology environment.",
             responsibilities: [
-                "Building AI-powered chatbots and conversational agents",
-                "Developing machine learning models with TensorFlow and PyTorch",
-                "Working with LLMs and transformer architectures",
-                "Creating autonomous AI systems and automation tools"
+                "Worked on AI and machine learning related tasks",
+                "Applied Python and AI/ML concepts to practical problems",
+                "Explored real-world machine learning workflows",
+                "Gained experience working in a professional development environment"
             ],
-            technologies: ["Python", "TensorFlow", "PyTorch", "LLMs", "NLP", "AI Agents"]
+            technologies: [
+                "Python",
+                "Artificial Intelligence",
+                "Machine Learning"
+            ]
         },
+
         {
-            position: "Full-Stack Developer",
-            company: "Freelance & Projects",
-            period: "2024",
-            location: "Bangladesh",
-            description: "Built complete web applications from frontend to backend. Developed responsive UIs, RESTful APIs, and database solutions for various clients and projects.",
+            position: "Diploma in Artificial Intelligence & Machine Learning",
+            company: "Zeal College",
+            period: "2024 - 2026",
+            location: "Pune, Maharashtra, India",
+            description:
+                "Completed a Diploma in Artificial Intelligence & Machine Learning with 86.77%, building a strong foundation in programming, artificial intelligence, machine learning, data science, and software development.",
             responsibilities: [
-                "Developing full-stack web applications using React and Node.js",
-                "Building RESTful APIs and integrating databases",
-                "Creating responsive and interactive user interfaces",
-                "Deploying and maintaining web applications"
+                "Studied Artificial Intelligence and Machine Learning",
+                "Developed academic and practical AI projects",
+                "Worked with Python and machine learning technologies",
+                "Applied data science and AI concepts to real-world problems",
+                "Participated in technical projects and competitions"
             ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "Next.js", "TypeScript"]
-        },
-        {
-            position: "Python Developer",
-            company: "Self-Taught & Projects",
-            period: "2023",
-            location: "Bangladesh",
-            description: "Dove deep into Python programming, building automation scripts, bots, and mastering the fundamentals of software development and problem-solving.",
-            responsibilities: [
-                "Learning Python programming and core concepts",
-                "Building automation scripts and Discord bots",
-                "Exploring data structures and algorithms",
-                "Participating in competitive programming"
-            ],
-            technologies: ["Python", "Automation", "Scripting", "Discord.py", "Problem Solving"]
-        },
-        {
-            position: "Graphic Designer",
-            company: "Freelance",
-            period: "2022",
-            location: "Bangladesh",
-            description: "Started my creative journey as a graphic designer, creating logos, banners, and visual content. This sparked my passion for technology and digital creation.",
-            responsibilities: [
-                "Designing logos and brand identity materials",
-                "Creating social media graphics and banners",
-                "Working with clients on creative projects",
-                "Learning design principles and visual aesthetics"
-            ],
-            technologies: ["Photoshop", "Illustrator", "Canva", "Figma", "Visual Design"]
-        },
-        {
-            position: "Microsoft Office",
-            company: "Begin Learning",
-            period: "2021",
-            location: "Bangladesh",
-            description: "Started my journey into the digital world by learning Microsoft Office tools. This foundational step introduced me to computers and sparked my curiosity for technology.",
-            responsibilities: [
-                "Learning Microsoft Word, Excel, and PowerPoint",
-                "Creating documents and presentations",
-                "Understanding basic computer operations",
-                "Building foundational digital skills"
-            ],
-            technologies: ["MS Word", "MS Excel", "MS PowerPoint", "Computer Basics"]
+            technologies: [
+                "Python",
+                "Machine Learning",
+                "Artificial Intelligence",
+                "Pandas",
+                "NumPy",
+                "scikit-learn"
+            ]
         }
     ],
+
     projects: [
         {
             id: 1,
-            title: "Drishti",
-            category: "AI / LLM",
-            technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/Drishti.png",
-            description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali.",
-            link: "https://huggingface.co/red1-for-hek/drishti-ilm-x1"
+            title: "HackVerse",
+            category: "Full-Stack / Hackathon Platform",
+            technologies: "React, Vite, FastAPI, Python, MongoDB",
+            image: "/images/projects/hackverse.png",
+            description:
+                "A modern hackathon management and collaboration platform that brings organizers, participants, and teams together in one ecosystem. It provides secure authentication, hackathon creation and management, student participation, team formation, and invitation workflows, with an architecture designed to support future developer tools and collaboration features.",
+            link: ""
         },
+
         {
             id: 2,
-            title: "VoteChain",
-            category: "Blockchain",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/VoteChain.png",
-            description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking.",
-            link: "https://github.com/red1-for-hek/smart-election-by-blockchain"
+            title: "NyayAI",
+            category: "AI / Legal Research / RAG",
+            technologies:
+                "React, Vite, FastAPI, Python, FAISS, Sentence Transformers",
+            image: "/images/projects/nyayai.png",
+            description:
+                "An AI-powered legal research assistant focused on Indian legal information. It combines semantic search, vector retrieval, embeddings, and Retrieval-Augmented Generation to help users discover relevant legal knowledge and interact with it through an intelligent question-answering experience.",
+            link: ""
         },
+
+        {
+            id: 3,
+            title: "IGRIS",
+            category: "AI Assistant / Automation",
+            technologies:
+                "Python, Speech Recognition, pyttsx3, OpenCV, Automation",
+            image: "/images/projects/igris.png",
+            description:
+                "A personal AI desktop assistant inspired by next-generation virtual assistants. IGRIS combines voice interaction, application automation, reminders, task management, notifications, YouTube control, and intelligent desktop workflows to create a more natural human-computer interaction experience.",
+            link: ""
+        },
+
         {
             id: 4,
-            title: "Flood Spaces 2.0",
-            category: "AI / ML",
-            technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
-            image: "/images/FloodSpaces.png",
-            description: "Predicts flood risks across Bangladesh up to one month in advance and sends early alerts to help people prepare.",
-            link: "https://github.com/red1-for-hek/Flood-Spaces-2.0"
+            title: "AI Examiner",
+            category: "AI / Education Technology",
+            technologies: "Python, AI/ML, Computer Vision, NLP",
+            image: "/images/projects/ai-examiner.png",
+            description:
+                "An AI-powered examination and evaluation platform designed to explore how artificial intelligence can assist the assessment process. The system focuses on reducing repetitive manual work, supporting automated evaluation workflows, and creating a smarter and more efficient examination experience.",
+            link: ""
         },
+
         {
             id: 5,
-            title: "Phoenix 3.0",
-            category: "AI Assistant",
-            technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
-            image: "/images/Phoenix3.0.png",
-            description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience.",
-            link: "https://github.com/red1-for-hek/phoenix3.0"
+            title: "AI Attendance System",
+            category: "AI / Computer Vision",
+            technologies:
+                "Python, OpenCV, Face Recognition, Machine Learning",
+            image: "/images/projects/ai-attendance.png",
+            description:
+                "An intelligent attendance management system that uses computer vision and facial recognition to identify students and automate attendance recording. The project aims to reduce manual attendance work while providing a faster and more consistent approach to classroom attendance management.",
+            link: ""
         },
+
         {
             id: 6,
-            title: "RedxChess",
-            category: "AI / Game Engine",
-            technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
-            image: "/images/RedxChess.png",
-            description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation.",
-            link: "/play"
+            title: "Enterprise AI Knowledge OS",
+            category: "Enterprise AI / Knowledge Management",
+            technologies: "Python, AI/ML, NLP, RAG, FAISS",
+            image: "/images/projects/enterprise-ai.png",
+            description:
+                "An AI-powered knowledge system designed to make organizational information easier to discover and use. It combines intelligent retrieval and AI-based question answering to create a centralized knowledge experience for interacting with enterprise information.",
+            link: ""
         },
+
         {
             id: 7,
-            title: "Prodesk",
-            category: "E-commerce",
-            technologies: "React, Node.js, MongoDB, Express, Stripe",
-            image: "/images/Prodesk.png",
-            description: "A complete e-commerce platform with secure checkout and smooth product browsing.",
-            link: "https://github.com/red1-for-hek/prodesk"
+            title: "ChainShield",
+            category: "Cybersecurity / Full-Stack",
+            technologies: "React, Vite, TypeScript, Cybersecurity",
+            image: "/images/projects/chainshield.png",
+            description:
+                "A modern cybersecurity-focused platform exploring security awareness, threat-oriented workflows, and a professional security interface. The project combines a contemporary frontend architecture with a design system focused on presenting cybersecurity concepts through an interactive experience.",
+            link: ""
         },
+
         {
             id: 8,
-            title: "HekTools",
-            category: "Security / Android",
-            technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
-            image: "/images/hektools.png",
-            description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes.",
+            title: "Ultron OS",
+            category: "Systems / Operating System",
+            technologies: "Rust, Cargo, Bootloader, QEMU",
+            image: "/images/projects/ultron-os.png",
+            description:
+                "An experimental operating system project exploring low-level software development and systems programming with Rust. The project investigates kernel development, boot processes, bootloader integration, and running a custom operating system environment through QEMU.",
             link: ""
         }
     ],
+
     contact: {
-        email: "redoyanul1234@gmail.com",
-        github: "https://github.com/red1-for-hek",
-        linkedin: "https://linkedin.com/in/red1-for-hek",
-        twitter: "https://x.com/red_1_ul",
-        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
-        instagram: "https://www.instagram.com/red_1_ul"
+        email: "shivamrk2509@gmail.com",
+        github: "https://github.com/ShivamKshirsagar7276",
+        linkedin: "https://www.linkedin.com/in/shivam-kshirsagar-85407b359",
+        twitter: "",
+        facebook: "",
+        instagram: "https://www.instagram.com/sk_shivam321"
     },
+
     skills: {
         develop: {
             title: "AI DEVELOPER",
-            description: "Building intelligent systems & AI solutions",
-            details: "Developing AI agents, chatbots, and machine learning models using Python, TensorFlow, and PyTorch. Specializing in LLMs, NLP, deep learning, and autonomous systems.",
-            tools: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LLMs", "NLP", "Deep Learning", "Chatbots", "AI Agents"]
+            description: "Building intelligent systems & AI-powered solutions",
+            details:
+                "Developing machine learning applications, AI assistants, RAG systems, intelligent automation tools, and practical AI solutions using Python and modern AI technologies.",
+            tools: [
+                "Python",
+                "Machine Learning",
+                "TensorFlow",
+                "Keras",
+                "scikit-learn",
+                "Pandas",
+                "NumPy",
+                "OpenCV",
+                "NLP",
+                "RAG",
+                "FAISS",
+                "Sentence Transformers",
+                "Computer Vision",
+                "AI Agents"
+            ]
         },
+
         design: {
             title: "FULL-STACK",
             description: "Modern web development & scalable applications",
-            details: "Building responsive and performant web applications using React, Next.js, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
-            tools: ["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "PostgreSQL", "TailwindCSS", "REST APIs", "Docker", "Git"]
+            details:
+                "Building modern frontend experiences and scalable backend systems using React, Vite, FastAPI, databases, REST APIs, and modern development tools.",
+            tools: [
+                "React",
+                "Vite",
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "FastAPI",
+                "Python",
+                "MongoDB",
+                "MySQL",
+                "REST APIs",
+                "Git",
+                "GitHub",
+                "Docker",
+                "Node.js",
+                "Java",
+                "Rust"
+            ]
         }
     }
 };
-
-

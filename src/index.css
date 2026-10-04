@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 
+/* =========================================================
+   GLOBAL / ROOT
+   ========================================================= */
+
 :root {
   font-family: "Geist", sans-serif;
-
   font-optical-sizing: auto;
   font-style: normal;
   line-height: 1.5;
-  scroll-behavior: smooth;
-  color-scheme: light dark;
+
+  --accentColor: #c2a4ff;
+  --backgroundColor: #0b080c;
+
+  /* Viewport height with mobile browser support */
+  --vh: 100vh;
+
   color: #eae5ec;
   background-color: var(--backgroundColor);
 
@@ -15,14 +23,80 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  --accentColor: #c2a4ff;
-  --backgroundColor: #0b080c;
-  --vh: 100vh;
-  --vh: 100svh;
+
+  scroll-behavior: smooth;
 }
+
+/* Modern mobile viewport unit */
+@supports (height: 100svh) {
+  :root {
+    --vh: 100svh;
+  }
+}
+
+/* =========================================================
+   BOX MODEL
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HTML
+   ========================================================= */
+
+html {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: var(--backgroundColor);
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100%;
+  background-color: #000;
+
+  /*
+   * Desktop layout originally depends on the page/container
+   * structure. Keep overflow hidden horizontally but allow
+   * normal vertical scrolling.
+   */
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  -webkit-overflow-scrolling: touch;
+
+  --cWidth: calc(100% - 30px);
+  --cMaxWidth: 1920px;
+}
+
+/* =========================================================
+   ROOT APP
+   ========================================================= */
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
 
 h1,
 h2,
@@ -31,33 +105,12 @@ h4,
 h5,
 h6 {
   font-family: "Geist", sans-serif;
+  margin-top: 0;
 }
 
-body {
-  overflow: hidden;
-}
-
-/* Allow scrolling on mobile */
-@media only screen and (max-width: 768px) {
-  body {
-    overflow: auto !important;
-    height: auto !important;
-    min-height: 100vh !important;
-    touch-action: manipulation;
-  }
-
-  html {
-    overflow-x: hidden !important;
-    overflow-y: auto !important;
-    touch-action: manipulation;
-  }
-
-  /* Ensure no fixed elements block scrolling */
-  .container-main {
-    position: static !important;
-    height: auto !important;
-  }
-}
+/* =========================================================
+   LINKS
+   ========================================================= */
 
 a {
   color: inherit;
@@ -68,9 +121,28 @@ a:hover {
   color: var(--accentColor);
 }
 
+/* =========================================================
+   MEDIA
+   ========================================================= */
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+}
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
 main {
   opacity: 1;
-  transition: 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .main-active {
@@ -85,23 +157,20 @@ main {
   }
 }
 
-body {
-  margin: 0;
-  height: auto;
-  background-color: #000;
-  flex-grow: 1;
-  --cWidth: calc(100% - 30px);
-  --cMaxWidth: 1920px;
+/* =========================================================
+   MAIN BODY
+   ========================================================= */
+
+.main-body {
+  width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
-.main-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-}
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
 
 .container-main {
   width: 100%;
@@ -109,12 +178,20 @@ body {
   position: relative;
 }
 
+/* =========================================================
+   PRIMARY CONTAINER
+   ========================================================= */
+
 .container1 {
   width: var(--cWidth);
   height: var(--vh);
   margin: auto;
   position: relative;
 }
+
+/* =========================================================
+   TEXT / SPLIT ANIMATION HELPERS
+   ========================================================= */
 
 .split-line {
   overflow: hidden;
@@ -127,19 +204,32 @@ body {
   flex-wrap: nowrap;
 }
 
+/* =========================================================
+   TECH STACK
+   ========================================================= */
+
 .techstack {
   width: 100%;
   position: relative;
+
   height: var(--vh);
   min-height: 100vh;
+
   margin: 0 auto;
-  margin-top: 0;
-  margin-bottom: 0;
   padding-top: 150px;
   padding-bottom: 150px;
-  background: linear-gradient(180deg, rgba(11, 8, 12, 0.95) 0%, rgba(11, 8, 12, 0.98) 100%);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(11, 8, 12, 0.95) 0%,
+      rgba(11, 8, 12, 0.98) 100%
+    );
+
   background-color: var(--backgroundColor);
+
   overflow: hidden;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,36 +237,56 @@ body {
 }
 
 .techstack::before {
-  content: '';
+  content: "";
+
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
+
   background:
-    radial-gradient(circle at 20% 50%, rgba(194, 164, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(194, 164, 255, 0.08) 0%, transparent 50%);
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(194, 164, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 50%,
+      rgba(194, 164, 255, 0.08) 0%,
+      transparent 50%
+    );
+
   pointer-events: none;
   z-index: 0;
 }
 
-.techstack>* {
+.techstack > * {
   position: relative;
   z-index: 1;
 }
 
 .techstack h2 {
   font-size: 80px;
+  line-height: 1.1;
+
   text-align: center;
+
   position: absolute;
+
   width: 100%;
+
   top: 150px;
   left: 0;
+
+  margin: 0;
+
   font-weight: 400;
   text-transform: uppercase;
+
   z-index: 3;
-  margin: 0;
 }
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
 
 @media screen and (min-width: 768px) {
   body {
@@ -184,8 +294,187 @@ body {
   }
 }
 
+/* =========================================================
+   TABLET
+   ========================================================= */
+
 @media screen and (max-width: 900px) {
   .techstack h2 {
     font-size: 40px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  body {
+    width: 100%;
+    max-width: 100vw;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    /*
+     * Important for phones:
+     * allow the page to naturally grow instead of forcing
+     * the desktop viewport container behaviour.
+     */
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .main-body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /*
+   * The desktop site uses a positioned container.
+   * On smaller screens allow content to determine height.
+   */
+  .container-main {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .container1 {
+    width: calc(100% - 24px);
+    max-width: 100%;
+    height: auto;
+    min-height: var(--vh);
+  }
+
+  /*
+   * Prevent long text from creating horizontal overflow.
+   */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    overflow-wrap: break-word;
+  }
+
+  /*
+   * Keep split animation elements from causing horizontal
+   * scrolling on narrow devices.
+   */
+  .split-line {
+    max-width: 100%;
+  }
+
+  .split-h2 {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  /* -----------------------------------------
+     Tech Stack
+     ----------------------------------------- */
+
+  .techstack {
+    width: 100%;
+    min-height: var(--vh);
+
+    height: auto;
+
+    padding-top: 110px;
+    padding-bottom: 80px;
+
+    overflow: hidden;
+  }
+
+  .techstack h2 {
+    position: relative;
+
+    top: auto;
+    left: auto;
+
+    width: 100%;
+
+    padding: 0 12px;
+
+    font-size: clamp(32px, 9vw, 48px);
+    line-height: 1.1;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+  .container1 {
+    width: calc(100% - 20px);
+  }
+
+  .techstack {
+    padding-top: 90px;
+    padding-bottom: 60px;
+  }
+
+  .techstack h2 {
+    font-size: clamp(28px, 10vw, 42px);
+    padding: 0 10px;
+  }
+}
+
+/* =========================================================
+   VERY SMALL DEVICES
+   ========================================================= */
+
+@media screen and (max-width: 360px) {
+  .container1 {
+    width: calc(100% - 16px);
+  }
+
+  .techstack h2 {
+    font-size: 28px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========================================================
+   TOUCH DEVICES
+   ========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+  /*
+   * Avoid hover-only behaviour being relied upon on mobile.
+   * Do not disable pointer events because the site still needs
+   * normal touch interaction.
+   */
+  a,
+  button {
+    -webkit-tap-highlight-color: transparent;
   }
 }
